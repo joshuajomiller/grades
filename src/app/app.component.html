@@ -19,7 +19,7 @@
                 <app-dropdown [data]="classes" title="Choose Class" (changed)="classChanged($event)" class="col-6"></app-dropdown>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 students-wrapper">
               <app-student-table [students]="chosenStudents" (selectedStudent)="studentChanged($event)" *ngIf="gradesView==='table'"></app-student-table>
               <app-student-grid [students]="chosenStudents" [chosenClass]="chosenClass" (selectedStudent)="studentChanged($event)" *ngIf="gradesView==='grid'"></app-student-grid>
             </div>

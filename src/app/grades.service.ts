@@ -22,7 +22,7 @@ export class GradesService {
   }
 
   getYears(chosenClass): number[] {
-    const chosenYears = [];
+    let chosenYears = [];
     this.getData().classStudents.forEach(classStudent => {
       if (!chosenClass || chosenClass === classStudent.classType) {
         classStudent.students.forEach(student => {
@@ -32,6 +32,7 @@ export class GradesService {
         });
       }
     });
+    chosenYears = chosenYears.sort();
     return chosenYears;
   }
 

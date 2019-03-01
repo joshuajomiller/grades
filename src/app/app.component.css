@@ -8,3 +8,7 @@ button.btn{
   font-size: 0.6rem;
   padding: 10px 30px;
 }
+.students-wrapper{
+  max-height: 300px;
+  overflow-y: auto;
+}
