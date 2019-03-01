@@ -1,0 +1,31 @@
+.app-dropdown{
+  background: #fff;
+  width: 100%;
+}
+.app-dropdown .btn{
+  text-align: initial;
+  border: 1px solid #96d04a;
+  color: #96d04a;
+  font-style: italic;
+}
+.app-dropdown .btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(150,208,74,.25);
+}
+.dropdown-toggle[_ngcontent-c1]::before {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  background-color: #96d04a;
+}
+.dropdown-toggle::after {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  color: #fff;
+}
+.dropdown-item {
+  color: #96d04a;
+}

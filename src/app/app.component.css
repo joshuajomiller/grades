@@ -1,0 +1,10 @@
+app-student-details{
+  display: block;
+  background: #fff;
+}
+button.btn{
+  background-color: #96d04a;
+  color: #ffffff;
+  font-size: 0.6rem;
+  padding: 10px 30px;
+}

@@ -1,0 +1,44 @@
+.card {
+  background-color: transparent;
+  border: 1px solid #c4c4c4;
+}
+.student-detail-image-container{
+  flex-grow: 0;
+}
+.student-detail-image-wrapper{
+  background: transparent;
+  border: 3px solid #96d04a;
+  border-radius: 10px;
+  height: 100%;
+}
+table{
+  width: 100%;
+  max-width: 750px;
+  font-size: 0.75rem;
+}
+td {
+  min-width: 50px;
+}
+td:nth-of-type(2n) {
+  font-weight: 700;
+}
+.scoreWrapper {
+  display: inline-block;
+  background: #ffffe0;
+  padding: 3px 13px;
+  margin-left: 5px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  width: 50px;
+  text-align: center;
+}
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

@@ -1,0 +1,6 @@
+<div ngbDropdown class="app-dropdown d-inline-block">
+  <button class="btn col" id="appDropdown" ngbDropdownToggle>{{selected || title}}</button>
+  <div class="col" ngbDropdownMenu aria-labelledby="appDropdown">
+    <button class="dropdown-item" *ngFor="let item of data" (click)="selectItem(item)">{{item}}</button>
+  </div>
+</div>

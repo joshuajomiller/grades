@@ -1,0 +1,7 @@
+<app-student-details *ngFor="let student of students"
+                     [studentDetail]="student"
+                     [chosenClass]="chosenClass"
+                     [ngClass]="{'bg-red': student.grade < 46, 'bg-yellow': currentStudent === student}"
+                     [editable]="false"
+                     (click)="selectStudent(student)">
+</app-student-details>

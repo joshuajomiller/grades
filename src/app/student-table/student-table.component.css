@@ -1,0 +1,13 @@
+.table{
+  font-size: 0.9rem;
+}
+.table thead th {
+  font-weight: normal;
+}
+.table td {
+  font-weight: 700;
+}
+
+.table tbody tr {
+  cursor: pointer;
+}

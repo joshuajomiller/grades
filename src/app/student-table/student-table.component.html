@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+  <tr class="bg-green">
+    <th>Name</th>
+    <th>S.Name</th>
+    <th class="text-center">Score</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let student of students" [ngClass]="{'bg-red': student.grade < 46, 'bg-yellow': currentStudent === student}" (click)="selectStudent(student)">
+    <td>{{student.fname}}</td>
+    <td>{{student.lname}}</td>
+    <td class="text-center">{{student.grade}}</td>
+  </tr>
+  </tbody>
+</table>

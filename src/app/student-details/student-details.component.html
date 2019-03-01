@@ -1,0 +1,31 @@
+<div class="card mb-3">
+  <div class="card-body p-2">
+    <div class="row">
+      <div class="col student-detail-image-container">
+        <div class="student-detail-image-wrapper">
+          <img src="assets/avatar.png">
+        </div>
+      </div>
+      <div class="col">
+        <table>
+          <tr class="p-1">
+            <td>Name:</td>
+            <td>{{studentDetail.fname}}</td>
+            <td>Class:</td>
+            <td>{{chosenClass}}</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="p-1">
+            <td>S.Name:</td>
+            <td>{{studentDetail.lname}}</td>
+            <td>Year:</td>
+            <td>{{studentDetail.year}}</td>
+            <td colspan="2" *ngIf="!editable">Score: <span class="scoreWrapper">{{studentDetail.grade}}</span></td>
+            <td colspan="2" *ngIf="editable">Score: <input type="number" class="scoreWrapper" *ngIf="editable" [ngModel]="studentDetail.grade"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
