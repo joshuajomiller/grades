@@ -11,7 +11,7 @@ export class GradesService {
   getStudents(chosenClass, chosenYear): StudentGrade[] {
     let chosenStudents = [];
     this.getData().classStudents.forEach(classStudent => {
-      if (!chosenClass || chosenClass === classStudent.classType) {
+      if (!chosenClass || chosenClass === classStudent.classType || chosenClass === 'All classes') {
         chosenStudents.push(...classStudent.students);
       }
       if (chosenYear) {
@@ -24,7 +24,7 @@ export class GradesService {
   getYears(chosenClass): number[] {
     let chosenYears = [];
     this.getData().classStudents.forEach(classStudent => {
-      if (!chosenClass || chosenClass === classStudent.classType) {
+      if (!chosenClass || chosenClass === classStudent.classType || chosenClass === 'All classes') {
         classStudent.students.forEach(student => {
           if (!chosenYears.includes(student.year)) {
             chosenYears.push(student.year);
@@ -37,7 +37,7 @@ export class GradesService {
   }
 
   getClassTypes() {
-    return this.getData().classTypes;
+    return ['All classes', ...this.getData().classTypes];
   }
 
   getData(): GradesModel {

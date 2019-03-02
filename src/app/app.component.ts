@@ -56,5 +56,6 @@ export class AppComponent implements OnInit {
 
   changeView(format: string) {
     this.gradesView = format;
+    this.chosenStudent = null;
   }
 }
